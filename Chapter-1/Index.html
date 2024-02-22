@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alerts Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+    </style>
+    <!-- Exercise 6a: Script in Head -->
+    <script>
+        function showAlertInHead() {
+            alert("This alert is in the head section!");
+        }
+    </script>
+</head>
+<body>
+
+    <h1>JavaScript Alerts Example</h1>
+
+    <!-- Exercise 6b: Script in Body (before page’s HTML) -->
+    <script>
+        alert("This alert is before the page's HTML!");
+    </script>
+
+    <!-- Exercise 6c: Script in Body (inside page’s HTML) -->
+    <div>
+        <p>Content of the page</p>
+        <button onclick="showAlertInBody()">Show Alert in Body</button>
+
+        <script>
+            function showAlertInBody() {
+                alert("This alert is inside the page's HTML!");
+            }
+        </script>
+    </div>
+
+    <!-- Exercise 6d: Script in Body (after page’s HTML) -->
+    <script>
+        alert("This alert is after the page's HTML!");
+    </script>
+<script src="app.js"></script>
+</body>
+</html>
